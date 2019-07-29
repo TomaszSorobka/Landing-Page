@@ -1,0 +1,37 @@
+html 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(6,100px);
+    grid-template-areas: 
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+  }
+
+/*.container {
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas:
+    "elo header header"
+    "banner banner banner"
+    "banner banner banner"
+    "banner banner banner"
+    "side info side"
+    "side info side";
+} */
+
+.banner_div {
+        /*text-align: center;*/
+}
+.banner {
+    display:none; 
+    grid-area: footer;
+    height: 100%;
+    
+}
+.welcome {
+    background-color: #DBE9EE;
+    grid-area:header ;
+  }
