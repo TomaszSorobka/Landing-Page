@@ -53,6 +53,7 @@ body{
     clear: both;
     width:100%;
     text-align: center;
+    position: relative;
 }
 
 .info {
@@ -87,3 +88,17 @@ body{
     text-align: center;
     vertical-align: text-top; */
 }
+/*coś nie linkuje się */
+.absolute-text {
+     
+     }
+     
+#lol {
+    position:absolute;
+     bottom:50%;
+     font-size:95px;
+     font-family:"verdana";
+     background:rgba(251,251,251,0.5);
+    
+     width:100%;
+    }
