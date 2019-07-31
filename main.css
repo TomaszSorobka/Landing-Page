@@ -41,7 +41,7 @@ body{
 }
 
 
-.icon, .contact, .info, .buttons {
+.icon, .contact, .info, .buttons, .aboutme-text {
     
     font-family: "Lato", sans-serif;
 
@@ -102,3 +102,39 @@ body{
     
      width:100%;
     }
+.aboutme-text {
+    text-align: start;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    font-size: 35px;
+    
+    
+}
+.aboutme {
+    width: 80%;
+    height: 200px;
+    display: inline-block;
+    box-shadow: 0 0 3px #ccc;
+    
+}
+.aboutme-flex {
+    display: flex;
+    flex-direction: row;
+}
+.aboutme-photo {
+    align-content: center;
+    width: 25%;
+    height: 200px;
+        align: middle;
+        border-radius: 50px;
+}
+
+.aboutme-info {
+    text-align: left;
+    border-right: 6px solid green;
+    width: 30%;
+}
+.aboutme-lorem {
+    width: 45%;
+    justify-content: flex-start;
+}
