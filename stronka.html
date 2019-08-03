@@ -30,10 +30,11 @@
 
 
      </div>
-     <div class="imgdiv">
-       <img src="/img/main2.jpg"  width=100% alt="laptop">
-         <p id="lol" class="absolute-text">Welcome</p>
-     </div>    
+          <div class="imgdiv">
+              <div id="lol" class="absolute-text">Welcome</div>
+            <img src="/img/main2.jpg"  width=100% alt="laptop">
+              
+          </div>    
      <div class=grid>
 
 
@@ -81,22 +82,42 @@
       </div>  
 
       <div class="portfolio-text"><strong>Portfolio</strong></div>
-        <div class="porfolio-flex">
-            <img class="portfolio-photo" src="img/design1.jpg" alt="">
-            <img class="portfolio-photo" src="img/design2.jpg" alt="">
-            <img class="portfolio-photo" src="img/design3.jpg" alt="">
-            <img class="portfolio-photo" src="img/design4.jpg" alt="">
-            <img class="portfolio-photo" src="img/design5.jpg" alt="">
-            <img class="portfolio-photo" src="img/design6.jpg" alt="">
+      <div class="portfolio">
+        <div class="portfolio-grid">
+            <!-- <img class="portfolio-photo" src="img/design1.jpg" alt=""> -->
+            <img class="portfolio-photo photo-standard" src="img/design2.jpg" alt="">
+            <img class="portfolio-photo photo-big" src="img/design3.jpg" alt="">
+            <img class="portfolio-photo photo-stan" src="img/design4.jpg" alt="">
+            <img class="portfolio-photo photo-stan2" src="img/design5.jpg" alt="">
+            <img class="portfolio-photo photo-stan3" src="img/design6.jpg" alt="">
             
         </div>
-
+      </div>
         <div class="contact-text"><strong>Contact</strong></div>
 
-            <div class="contact">
-                
-            
-            </div>
+        <div class="container-contact">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
 
 
 

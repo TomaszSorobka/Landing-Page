@@ -22,12 +22,12 @@
 
 body{
     margin:0px;
-    background: linear-gradient(270deg, #293c5c, #d4e6be, #ffffff);
+    background: linear-gradient(30deg, #293c5c, #d4e6be, #ffffff);
 background-size: 400% 400%;
 
--webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
+-webkit-animation: AnimationName 10s ease infinite;
+-moz-animation: AnimationName 10s ease infinite;
+animation: AnimationName 10s ease infinite;
 }
 
 
@@ -145,17 +145,19 @@ animation: AnimationName 30s ease infinite;
 }
 /*coś nie linkuje się */
 .absolute-text {
-     
+    
      }
      
 #lol {
-    position:absolute;
-     top:10%;
-     font-size:95px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+     font-size:75px;
      font-family:"verdana";
      background:rgba(251,251,251,0.5);
-    
-     width:100%;
+    width:100%;
+     
     }
 .aboutme-text {
     text-align: start;
@@ -178,7 +180,7 @@ animation: AnimationName 30s ease infinite;
 }
 .aboutme-flex {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 /* .aboutme-photo {
     flex-grow: 1;
@@ -203,10 +205,22 @@ animation: AnimationName 30s ease infinite;
 .aboutme-photo, .aboutme-info, .aboutme-lorem {
     flex-grow: 1;
     padding-top: 3vh;
-    justify-content: flex-start;
+    float: left;
+    position: relative;
+    line-height: 0,5em;
+    
 }
 .aboutme-lorem {
     width: 50vh;
+    text-align: start;
+}
+.aboutme-info {
+    text-align: start;
+}
+.aboutme-info p {
+    line-height: 1.5em;}
+.aboutme-photo img {
+    border-radius: 50%;
 }
 
 .skills {
@@ -249,18 +263,60 @@ text-align: start;
 
 .portfolio-photo {
     height: 30vh;
-}
-.porfolio-flex {
     width: 100%;
-    min-height: 35vh;
-    display: flex;
-    box-shadow: 0 0 3px #ccc;
-    align-items: center;
-    justify-content: center; 
-    justify-self: center;  
-    background-color: rgba(251,251,251,0.3);
-    flex-wrap:wrap;
+    object-fit: cover;
 }
+
+
+
+
+.portfolio-grid {
+    width: 100%;
+    
+    display: grid;
+    box-shadow: 0 0 3px #ccc;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(251,251,251,0.3);
+    
+
+
+    grid-template-areas: "big standard stan"
+                         "big stan2 stan3";
+
+                         grid-template-columns: 1fr 1fr 1fr;
+
+                         grid-template-rows: 
+                                              
+                                             auto
+                                             1fr;
+    
+}                          
+
+/* grid area portfolio */
+
+.photo-big {
+    grid-area: big;
+    height: 100%;
+    width: 100%;
+    }
+    
+.photo-standard {
+        grid-area: standard;
+}
+.photo-stan2 {
+    grid-area: stan2;
+}
+.photo-stan3 {
+    grid-area: stan3;
+}
+.photo-stan {
+    grid-area: stan;
+}
+/* grid area end*/
+
+
 
 .contact-text{
     text-align: center;
@@ -269,3 +325,42 @@ text-align: start;
         font-size: 35px;
         margin-top: 4%;
 }
+
+/* object-fit: cover; */
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container-contact {
+    border-radius: 5px;
+    background-color:;
+    padding: 20px;
+  }
