@@ -17,18 +17,7 @@
 }
 
 
-.icon:hover, .contact:hover {
-    
-    padding-top:10px;
-    padding-bottom: 10px;
-    margin: 0px 15px;
-    
-    text-align: center;
-    align-self: center;
-    
-    background-color: lightgray;
-    transition: 1s;
-}
+
   
 html {
     scroll-behavior: smooth;
@@ -67,13 +56,14 @@ animation: gradient-body 20s ease infinite;
 
 .container {
     width: 100%;
-    max-width: ;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     text-align: center;
     padding: 0px;
 }
+
+/* HEADER STUFF */
 .mainheader {
     position: fixed;
     background-color: white;
@@ -97,7 +87,6 @@ animation: gradient-body 20s ease infinite;
     float:left;
     width: 90%;
     display:flex;
-    flex-direction: row;
     justify-content: flex-end;
     flex-wrap:wrap;
 }
@@ -115,9 +104,10 @@ animation: gradient-body 20s ease infinite;
     margin-right:5px;
     font-size: 1.5rem;
 }
+/* HEADER STUFF END */
 
 
-.icon, .contact, .info, .buttons, .aboutme-text, .skills-text, .portfolio-text, .contact-text, .aboutme-info {
+.font {
     
     font-family: "Lato", sans-serif;
 
@@ -125,6 +115,7 @@ animation: gradient-body 20s ease infinite;
 
     } */
 
+    /* MAIN IMAGE */
 .imgdiv {
     clear: both;
     width:100%;
@@ -140,69 +131,68 @@ font-weight: bold;
 font-size: 100px;
 line-height: 117px;
 }
+/* MAIN IMAGE END */    
+ 
+/* UNDER THE MAIN IMAGE ........................................ */
+            .info {
+                width: 100%;
+                text-align:center;
+                
+            }
+            .info p {
+                font-size: 3rem;
+            }
 
-.info {
-    width: 100%;
-    text-align:center;
-    
-}
-.info p {
-    font-size: 3rem;
-}
+
+            .buttonflex {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .buttons {
+                float: left;
+                width: 45%;
+                box-sizing: content-box;
+                margin: 20px;
+                font-size: 1.5rem;
+                color: white;
+                
+            }
+            .contact-button{
+                background-color: #d4385f;
+                background: linear-gradient(270deg, #d4385f 14%, #f7688b 68.5%);
+                padding: 15px;
+                border-radius: 15px;
+                
+            }
+            .button1 {
+                text-align: end;
+                
+
+            }
+            .button2 {
+                text-align: start;
+                
+            }
 
 
-.buttonflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+            #lol {
+                position: absolute;
+                top: 7%;
+                left: 50%;
+                transform: translate(-50%, -50%);   
+                font-size:2.5rem;
+                font-family: 'Lato';
+                background:rgba(251,251,251,0.5);
+                width:100%;
+                }
 
-.buttons {
-    float: left;
-    width: 45%;
-    box-sizing: content-box;
-    margin: 20px;
-    font-size: 1.5rem;
-    color: white;
-    
-}
-.con-text{
-    background-color: #d4385f;
-    background: linear-gradient(270deg, #d4385f 14%, #f7688b 68.5%);
-    padding: 15px;
-    border-radius: 15px;
-    
-}
-.button1 {
-    text-align: end;
-    
 
-}
-.button2 {
-    text-align: start;
-    
-}
-/* .textonimage {
-    text-align: center;
-    vertical-align: text-top; */
-}
-/*coś nie linkuje się */
-.absolute-text {
-    
-     }
-     
-#lol {
-    position: absolute;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-     font-size:2.5rem;
-     font-family: 'Lato';
-     background:rgba(251,251,251,0.5);
-    width:100%;
+ /* UNDER THE MAIN IMAGE END ........................................ */
 
-     
-    }
+
+    /* ABOUT ME SECTIOOOOON */
 .aboutme-text {
     text-align: start;
     margin-left: 10%;
@@ -227,26 +217,7 @@ line-height: 117px;
     display: flex;
     flex-wrap: wrap;
 }
-/* .aboutme-photo {
-    flex-grow: 1;
-    align-content: center;
-    width: 25%;
-    height: 200px;
-        align: middle;
-        border-radius: 50px;
-}
 
-.aboutme-info {
-    flex-grow: 1;
-    text-align: left;
-    border-right: 2px solid green;
-    width: 30%;
-}
-.aboutme-lorem {
-    flex-grow: 1;
-    width: 45%;
-    justify-content: flex-start;
-} */
 .aboutme-photo, .aboutme-info, .aboutme-lorem {
     flex-grow: 1;
     padding-top: 3vh;
@@ -258,9 +229,12 @@ line-height: 117px;
 .aboutme-lorem {
     width: 50vh;
     text-align: start;
+    padding-left: 10px;
+    justify-content: center;
 }
 .aboutme-info {
     text-align: start;
+    padding-left: 10px;
 }
 .aboutme-info p {
     line-height: 1.5em;
@@ -268,6 +242,10 @@ line-height: 117px;
 .aboutme-photo img {
     border-radius: 50%;
 }
+
+/* ABOUTME SECTIOOOON ENDDD */
+
+/* SKILS SECTION ----------- */
 
 .skills {
     width: 80%;
@@ -297,104 +275,95 @@ text-align: start;
     flex-grow: 1;
     padding-top: 3vh;
 }
+/* SKILLS SECTION END ----------- */
 
-.portfolio-text{
-    text-align: center;
-        
-        margin-bottom: 3%;
-        font-size: 35px;
-        margin-top: 4%;
-}
-
-
-.portfolio-photo {
-    height: 30vh;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-
-.portfolio-grid {
-    width: 100%;
-    
-    display: grid;
-    box-shadow: 0 0 3px #ccc;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background-color: rgba(251,251,251,0.3);
-    
-
-
-    grid-template-areas: "big standard stan"
-                         "big stan2 stan3";
-
-                         grid-template-columns: 1fr 1fr 1fr;
-
-                         grid-template-rows: 
-                                              
-                                             auto
-                                             1fr;
-    
-}                          
-
-/* grid area portfolio */
-
-.photo-big {
-    grid-area: big;
-    height: 100%;
-    width: 100%;
+ /* PORTFOLIO STUFF --------------- */
+    .portfolio-text{
+        text-align: center;
+            
+            margin-bottom: 3%;
+            font-size: 35px;
+            margin-top: 4%;
     }
-    
-.photo-standard {
-        grid-area: standard;
-}
-.photo-stan2 {
-    grid-area: stan2;
-}
-.photo-stan3 {
-    grid-area: stan3;
-}
-.photo-stan {
-    grid-area: stan;
-}
-/* grid area end*/
-.photo-big:hover {
-    
-}
+
+
+    .portfolio-photo {
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+    }
 
 
 
+
+    .portfolio-grid {
+        width: 100%;
+        
+        display: grid;
+        box-shadow: 0 0 3px #ccc;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background-color: rgba(251,251,251,0.3);
+        
+
+
+        grid-template-areas: "big standard stan"
+                            "big stan2 stan3";
+
+                            grid-template-columns: 1fr 1fr 1fr;
+
+                            grid-template-rows: 
+                                                
+                                                auto
+                                                1fr;
+        
+    }                          
+
+            /* grid area portfolio */
+
+            .photo-big {
+                grid-area: big;
+                height: 100%;
+                width: 100%;
+                }
+                
+            .photo-standard {
+                    grid-area: standard;
+            }
+            .photo-stan2 {
+                grid-area: stan2;
+            }
+            .photo-stan3 {
+                grid-area: stan3;
+            }
+            .photo-stan {
+                grid-area: stan;
+            }
+            /* grid area end*/
+
+/* PORTFOLIO STUFF end --------------- */
+
+/* CONTACT FORMULAR ----------------- */
 .contact-text{
     text-align: center;
-        
-        margin-bottom: 3%;
-        font-size: 35px;
-        margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 35px;        
+    margin-top: 4%;
 }
 
-/* object-fit: cover; */
-
-
-
-
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
   }
   
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -402,35 +371,25 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container-contact {
+
+.container-contact {
     border-radius: 5px;
-    background-color:;
     padding: 20px;
   }
+  /* CONTACT FORMULAR END ----------------- */
 
-  .gr-footer {
+  /* FOOTER CONTAINER */
+.footer-flex {
 	background-color: #ffffff;
 	color: #fff;
 	font-size: 1.2rem;
 	display: flex;
 	justify-content: center;
     align-items: center;
-    
     width: 100%;
-    height: 40px;
-    bottom: ;
-    flex-direction: row;
-
-    
+    height: 40px;   
 }
-.gr-footer ul {
+.footer-flex ul {
     list-style: none;
     margin: auto;
     padding: 0px 10px 0px 10px;
@@ -441,13 +400,34 @@ input[type=text], select, textarea {
 	align-items: center;
 	text-align: center;
  }
-.gr-footer ul li a {
+ .footer-flex ul li a {
     display: flex;
     padding: 2px;
     margin: 0px 15px;
     border-radius: 55%;
 }
-.gr-footer ul li a:hover {
+
+
+li img {
+    height: 40px;
+}
+/* FOOTER CONTAINER END */
+
+/* HOVERS --------------------------------------*/
+.icon:hover, .contact:hover {
+    
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 0px 15px;
+    
+    text-align: center;
+    align-self: center;
+    
+    background-color: lightgray;
+    transition: 1s;
+}
+
+.footer-flex ul li a:hover {
     
     padding: 2px;
     margin: 0px 15px;
@@ -455,15 +435,22 @@ input[type=text], select, textarea {
     background-color: lightgray;
     transition: 1s;
 }
-
-li img {
-    height: 40px;
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+.buttons:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+  
 }
+  .photo-big:hover {
+    
+}
+/* HOVERS END --------------------------------------*/
 
 
 
-
-
+/* MEDIA SCREEN DIFFEREN SIZES ------------------ */
 
 @media screen and (max-width: 900px) {
 .wel {
@@ -523,3 +510,4 @@ li img {
 }
 
 }
+/* MEDIA SCREEN DIFFEREN SIZES END ------------------ */

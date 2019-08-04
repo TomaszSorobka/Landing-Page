@@ -15,78 +15,90 @@
   <div class="container"> 
      <div class="mainheader">
 
+       
         <div class="headerfloat">
-              <div class="header1"><img height=50px src="/img/icon.png" alt="icon"></div>
+              <div class="header1"><a href="">
+                <img height=50px src="/img/icon.png" alt="icon"></a></div>
         </div>
 
 
         <div class="iconflex">
-            <div class="icon"><a href="#aboutme">About</a></div>
-            <div class="icon"><a href="#skills">Skills</a></div>
-            <div class="icon"><a href="#portfolio">Portfolio</a></div>
-            <div class="contact"><a href="#contact">Contact</a></div>
+            <div class="icon font"><a href="#aboutme">About</a></div>
+            <div class="icon font"><a href="#skills">Skills</a></div>
+            <div class="icon font"><a href="#portfolio">Portfolio</a></div>
+            <div class="contact font"><a href="#contact">Contact</a></div>
         </div>
         
 
 
      </div>
+
+
           <div class="imgdiv">
               <div id="lol" class="absolute-text"><span class="wel">Welcome</span><br>
                                             My name is Tomasz.<br>
                                           I am beginner web developer.</div>
             <img class="banner" src="/img/red-composition3.jpg" width=100% alt="laptop">
               
-          </div>    
+          </div>  
+            
      <div class=grid>
 
-
-
-     <div class="info"><p>I am happy to help you with any problem!</p></div>
+     
+      <div class="info font"><p>I am happy to help you with any problem!</p></div>
         <div  class="buttonflex">
-            <div id="aboutme" class="button1 buttons"><span class="con-text">Contact me!</span></div>
-            <div class="button2 buttons"><span class="con-text">Check my CV!</span></div>
+            <div id="aboutme" class="button1 buttons font"><span class="contact-button">Contact me!</span></div>
+            <div class="button2 buttons font"><span class="contact-button">Check my CV!</span></div>
       </div>
-      <div class="aboutme-text"><strong>About me</strong></div>
+
+    <div class="aboutme-text font"><strong>About me</strong></div>
 
     <div  class="aboutme">
         <div class="aboutme-flex">
           <div class="aboutme-photo"><img src="/img/profile.jpg" alt="profile" width= 150px;></div>
-          <div class="aboutme-info"> <p>Full name: Designer <br>
+          <div class="aboutme-info font"> <p>Full name: Designer <br>
                                      Age: 17 <br>
                                      Profile: Fullstack <br>
                                      Telephone: +48 123-456-789 <br>
                                      E-mail: tomek.sorobka@gmail.com </p> </div>
-          <div  class="aboutme-lorem"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor laoreet semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing<span id="skills"></span> elit. </p></div>
-        </div>
-       
+          <div  class="aboutme-lorem"><p class="font">Lorem ipsum dolor sit amet,
+                                         consectetur adipiscing elit.
+                                         Pellentesque auctor laoreet semper.
+                                         Pellentesque habitant morbi tristique
+                                         senectus et netus et malesuada fames ac
+                                         turpis egestas. Lorem ipsum dolor sit
+                                         amet, consectetur adipiscing elit. </p>
+                                         <p class="font">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit.
+                                            Pellentesque auctor laoreet semper.
+                                            <span id="skills"></span> elit. </p></div>
+       </div>
 
+    </div>
 
-
-
-          </div>
-          <div class="skills-text"><strong>Skills&Hobbies</strong></div>
-          <div class="skills">
-              <div class="skills-flex">
-                      <div class="first-skill"><img src="/img/basketball.png"
+      <div class="skills-text font"><strong>Skills&Hobbies</strong></div>
+      <div class="skills">
+          <div class="skills-flex">
+                      <div class="first-skill font"><img src="/img/basketball.png"
                          alt="basketball" width=100vh>
                          <p>Sport<br>
                         Basketball</p></div>
-                      <div class="second-skill"><img src="/img/programming.png"
+                      <div class="second-skill font"><img src="/img/programming.png"
                         alt="programming" width=100vh>
                         <p>Programming<br>
                        JavaScript</p></div>
-                      <div class="third-skill"><img src="/img/film-editing.png"
+                      <div class="third-skill font"><img src="/img/film-editing.png"
                         alt="film-editing" width=100vh>
                         <p>Film Editing<span id="portfolio"></span><br>
                        Adobe Premiere Pro</p></div>
-                      </div>
+            </div>
 
-      </div>  
+     </div>  
 
-      <div class="portfolio-text"><strong>Portfolio</strong></div>
+      <div class="portfolio-text font"><strong>Portfolio</strong></div>
       <div class="portfolio">
         <div class="portfolio-grid">
-            <!-- <img class="portfolio-photo" src="img/design1.jpg" alt=""> -->
+            
             <img class="portfolio-photo photo-standard" src="img/design2.jpg" alt="">
             <img class="portfolio-photo photo-big" src="img/design3.jpg" alt="">
             <img class="portfolio-photo photo-stan" src="img/design4.jpg" alt="">
@@ -95,27 +107,27 @@
             
         </div>
       </div>
-        <div id="contact" class="contact-text"><strong>Contact</strong></div>
+        <div id="contact" class="contact-text font"><strong>Contact</strong></div>
 
         <div class="container-contact">
             <form action="action_page.php">
           
-              <label for="fname">First Name</label>
+              <label class="font" for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
-              <label for="lname">Last Name</label>
+              <label class="font" for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           
               
           
-              <label for="subject">Subject</label>
+              <label class="font" for="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
           
               <input type="submit" value="Submit">
           
             </form>
           </div>
-          <footer class="gr-footer">
+          <footer class="footer-flex">
             <ul>
                  <li><a href=""><img class="footer-icon" src="/img/ikony/fb.png"></a></li>
                  <li><a href=""><img class="footer-icon" src="/img/ikony/instagram.png"></a></li>
