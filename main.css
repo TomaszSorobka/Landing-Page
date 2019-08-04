@@ -22,7 +22,7 @@
 
 body{
     margin:0px;
-    background: linear-gradient(250deg, #d4385f, #019098, #ffffff, #9a5b56, #b3d3be);
+    background: linear-gradient(300deg, #d4385f, #019098, #ffffff, #9a5b56, #b3d3be, #1e5ad6);
 background-size: 400% 400%;
 
 -webkit-animation: AnimationName 20s ease infinite;
@@ -99,7 +99,7 @@ animation: AnimationName 20s ease infinite;
 }
 
 
-.icon, .contact, .info, .buttons, .aboutme-text, .skills-text, .portfolio-text, .contact-text {
+.icon, .contact, .info, .buttons, .aboutme-text, .skills-text, .portfolio-text, .contact-text, .aboutme-info {
     
     font-family: "Lato", sans-serif;
 
@@ -126,7 +126,7 @@ line-height: 117px;
 .info {
     width: 100%;
     text-align:center;
-    font-size: 32px;
+    
 }
 .info p {
     font-size: 3rem;
@@ -145,12 +145,15 @@ line-height: 117px;
     box-sizing: content-box;
     margin: 20px;
     font-size: 1.5rem;
+    color: white;
     
 }
 .con-text{
     background-color: #d4385f;
+    background: linear-gradient(270deg, #d4385f 14%, #f7688b 68.5%);
     padding: 15px;
     border-radius: 15px;
+    
 }
 .button1 {
     text-align: end;
@@ -175,8 +178,8 @@ line-height: 117px;
     top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);   
-     font-size:2rem;
-     font-family: 'Inconsolata', monospace;
+     font-size:2.5rem;
+     font-family: 'Lato';
      background:rgba(251,251,251,0.5);
     width:100%;
 
@@ -186,6 +189,7 @@ line-height: 117px;
     text-align: start;
     margin-left: 10%;
     margin-bottom: 3%;
+    margin-top: 8%;
     font-size: 35px;
     
     
@@ -241,7 +245,8 @@ line-height: 117px;
     text-align: start;
 }
 .aboutme-info p {
-    line-height: 1.5em;}
+    line-height: 1.5em;
+    padding:;}
 .aboutme-photo img {
     border-radius: 50%;
 }
@@ -432,4 +437,46 @@ input[type=text], select, textarea {
 
 li img {
     height: 40px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+.wel {
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+}
+#lol {
+    font-size: 2rem;
+}
+.info p {
+    font-size: 2rem;
+}
+.buttons {
+    font-size: 1rem;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+.wel {
+    font-size: 3rem;
+}
+#lol {
+    font-size: 1.5rem;
+    top: 5%;
+}
+.contact-text, .aboutme-text, .skills-text, .portfolio-text {
+    font-size: 1.5rem;
+}
+
+
 }
