@@ -1,23 +1,38 @@
 
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes gradient-body {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes gradient-body {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes AnimationName { 
+@keyframes gradient-body { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
 
 
-
+.icon:hover, .contact:hover {
+    
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 0px 15px;
+    
+    text-align: center;
+    align-self: center;
+    
+    background-color: lightgray;
+    transition: 1s;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
 
 
 body{
@@ -25,9 +40,9 @@ body{
     background: linear-gradient(300deg, #d4385f, #019098, #ffffff, #9a5b56, #b3d3be, #1e5ad6);
 background-size: 400% 400%;
 
--webkit-animation: AnimationName 20s ease infinite;
--moz-animation: AnimationName 20s ease infinite;
-animation: AnimationName 20s ease infinite;
+-webkit-animation: gradient-body 20s ease infinite;
+-moz-animation: gradient-body 20s ease infinite;
+animation: gradient-body 20s ease infinite;
 }
 
 
@@ -89,6 +104,9 @@ animation: AnimationName 20s ease infinite;
 .icon {
     margin: 15px;
     font-size: 1.5rem;
+}
+.icon a, .contact a {
+    text-decoration:none;
 }
 
 .contact {
@@ -343,6 +361,9 @@ text-align: start;
     grid-area: stan;
 }
 /* grid area end*/
+.photo-big:hover {
+    
+}
 
 
 
@@ -468,15 +489,37 @@ li img {
 @media screen and (max-width: 500px) {
 
 .wel {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 #lol {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     top: 5%;
 }
 .contact-text, .aboutme-text, .skills-text, .portfolio-text {
     font-size: 1.5rem;
 }
 
+.icon-flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.icon, .contact {
+    font-size: 1rem;
+}
+.buttons {
+    font-size: 0.7rem;
+}
+.banner {
+    
+}
+.skills-text {
+    margin: 10%;
+}
+li img {
+    height: px;
+}
+.icon, .contact{
+  margin: 10px;  
+}
 
 }
