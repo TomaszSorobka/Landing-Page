@@ -17,7 +17,9 @@
 }
 
 
-
+a:link, a:visited {
+    color: black;
+}
   
 html {
     scroll-behavior: smooth;
