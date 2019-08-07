@@ -15,7 +15,7 @@
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 a:link, a:visited {
     color: black;
@@ -34,6 +34,12 @@ background-size: 400% 400%;
 -webkit-animation: gradient-body 20s ease infinite;
 -moz-animation: gradient-body 20s ease infinite;
 animation: gradient-body 20s ease infinite;
+width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    padding: 0px;
 }
 
 
@@ -48,7 +54,7 @@ animation: gradient-body 20s ease infinite;
 
     grid-template-rows: 
                          
-                        1fr 
+                        1fr
                         40px;
 
    
@@ -56,14 +62,7 @@ animation: gradient-body 20s ease infinite;
     
 }
 
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    text-align: center;
-    padding: 0px;
-}
+
 
 /* HEADER STUFF */
 .mainheader {
@@ -71,10 +70,11 @@ animation: gradient-body 20s ease infinite;
     background-color: white;
     width: 100%;
     z-index: 1000;
+    display: flex;
 }
 
 .headerfloat {
-    float: left;
+   
     width: 10%;
     
 }
@@ -86,7 +86,7 @@ animation: gradient-body 20s ease infinite;
 }
 
 .iconflex {
-    float:left;
+    
     width: 90%;
     display:flex;
     justify-content: flex-end;
@@ -119,7 +119,7 @@ animation: gradient-body 20s ease infinite;
 
     /* MAIN IMAGE */
 .imgdiv {
-    clear: both;
+    
     width:100%;
     text-align: center;
     position: relative;
@@ -132,7 +132,10 @@ font-style: normal;
 font-weight: bold;
 font-size: 100px;
 line-height: 117px;
+margin-bottom: 0;
+margin-top: 0;
 }
+
 /* MAIN IMAGE END */    
  
 /* UNDER THE MAIN IMAGE ........................................ */
@@ -179,7 +182,7 @@ line-height: 117px;
             }
 
 
-            #lol {
+            #introduction {
                 position: absolute;
                 top: 7%;
                 left: 50%;
@@ -209,8 +212,6 @@ line-height: 117px;
     min-height: 27vh;
     display: inline-block;
     box-shadow: 0 0 3px #ccc;
-    align-items: center;
-    justify-content: center; 
     justify-self: center;  
     background-color: rgba(251,251,251,0.3);
     
@@ -240,7 +241,7 @@ line-height: 117px;
 }
 .aboutme-info p {
     line-height: 1.5em;
-    padding:;}
+    }
 .aboutme-photo img {
     border-radius: 50%;
 }
@@ -253,9 +254,7 @@ line-height: 117px;
     width: 80%;
     min-height: 27vh;
     display: inline-block;
-    box-shadow: 0 0 3px #ccc;
-    align-items: center;
-    justify-content: center; 
+    box-shadow: 0 0 3px #ccc; 
     justify-self: center;  
     background-color: rgba(251,251,251,0.3);
     
@@ -389,7 +388,7 @@ input[type=submit] {
 	justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40px;   
+    height: 45px;   
 }
 .footer-flex ul {
     list-style: none;
@@ -459,7 +458,7 @@ input[type=submit]:hover {
     font-size: 4.5rem;
     line-height: 3.5rem;
 }
-#lol {
+#introduction {
     font-size: 2rem;
 }
 .info p {
@@ -480,7 +479,7 @@ input[type=submit]:hover {
 .wel {
     font-size: 2.5rem;
 }
-#lol {
+#introduction {
     font-size: 1.2rem;
     top: 5%;
 }
@@ -497,9 +496,6 @@ input[type=submit]:hover {
 }
 .buttons {
     font-size: 0.7rem;
-}
-.banner {
-    
 }
 .skills-text {
     margin: 10%;
